@@ -11,6 +11,7 @@ Source1:	http://www.isi.edu/nsnam/nam/nam-editor.ps
 # Source1-md5:	30247511d4836c98eecad2d34baa285b
 URL:		http://www.isi.edu/nsnam/
 Patch0:		%{name}-install.patch
+Patch1:		tcl-lib.patch
 BuildRequires:	autoconf
 BuildRequires:	otcl-devel
 BuildRequires:	tclcl-static
@@ -98,6 +99,7 @@ Skrypty Tcl z nam.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
