@@ -1,5 +1,5 @@
 Summary:	Network Animator
-Summary(pl):	Network Animator
+Summary(pl):	Network Animator - sieciowe narzêdzie animuj±ce
 Name:		nam
 Version:	1.9
 Release:	1
@@ -26,8 +26,9 @@ packet level animation, and various data inspection tools.
 
 %description -l pl
 Nam jest opartym na Tcl/TK narzêdziem animuj±cym do ogl±dania
-¶ladów symulacji oraz rzeczywistych pakietów. Wspiera topologie,
-animowanie pakietów i ró¿ne narzêdzia obróbki danych.
+tras symulowanych oraz rzeczywistych pakietów. Wspiera przedstawianie
+topologii, animowanie na poziomie pakietów i ró¿ne narzêdzia obróbki
+danych.
 
 %package bin
 Summary:	Various scripts from nam
@@ -121,9 +122,9 @@ cp -r edu $RPM_BUILD_ROOT%{_datadir}/nam
 cp -r ex $RPM_BUILD_ROOT%{_datadir}/nam
 cp -r iecdemos $RPM_BUILD_ROOT%{_datadir}/nam
 cp -r tcl $RPM_BUILD_ROOT%{_datadir}/nam
-gzip $RPM_BUILD_ROOT%{_datadir}/nam/edu/*[^l]
+gzip -9n $RPM_BUILD_ROOT%{_datadir}/nam/edu/*[!l]
 gunzip $RPM_BUILD_ROOT%{_datadir}/nam/ex/*.gz
-gzip $RPM_BUILD_ROOT%{_datadir}/nam/ex/*
+gzip -9n $RPM_BUILD_ROOT%{_datadir}/nam/ex/*
 
 install *.t{cl,k} $RPM_BUILD_ROOT%{_datadir}/nam/bin
 
