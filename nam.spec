@@ -2,7 +2,7 @@ Summary:	Network Animator
 Summary(pl):	Network Animator - sieciowe narzêdzie animuj±ce
 Name:		nam
 Version:	1.10
-Release:	2
+Release:	3
 License:	Public domain (?)
 Group:		Applications/Networking
 Source0:	http://www.isi.edu/nsnam/dist/%{name}-src-%{version}.tar.gz
@@ -12,6 +12,7 @@ Source1:	http://www.isi.edu/nsnam/nam/nam-editor.ps
 URL:		http://www.isi.edu/nsnam/
 Patch0:		%{name}-install.patch
 Patch1:		tcl-lib.patch
+Patch2:		%{name}-link.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	otcl-devel
@@ -101,13 +102,15 @@ Skrypty Tcl z nam.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
 %{__autoconf}
 %configure \
 	--with-tcl-ver=8.4 \
-	--with-tk-ver=8.4
+	--with-tk-ver=8.4 \
+	--with-zlib=%{_libdir}
 %{__make} \
 	CCOPT="%{rpmcflags}"
 
