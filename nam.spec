@@ -2,7 +2,7 @@ Summary:	Network Animator
 Summary(pl):	Network Animator - sieciowe narzêdzie animuj±ce
 Name:		nam
 Version:	1.10
-Release:	1
+Release:	2
 License:	Public domain (?)
 Group:		Applications/Networking
 Source0:	http://www.isi.edu/nsnam/dist/%{name}-src-%{version}.tar.gz
