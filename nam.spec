@@ -1,22 +1,21 @@
 Summary:	Network Animator
 Summary(pl):	Network Animator - sieciowe narzêdzie animuj±ce
 Name:		nam
-Version:	1.9
+Version:	1.10
 Release:	1
 License:	Public domain (?)
 Group:		Applications/Networking
 Source0:	http://www.isi.edu/nsnam/dist/%{name}-src-%{version}.tar.gz
-# Source0-md5:	7505017f344ab5bf5eb9632bc6091dce
+# Source0-md5:	35efe4a43f1cc3dd03fb744c5603fc58
 Source1:	http://www.isi.edu/nsnam/nam/nam-editor.ps
 # Source1-md5:	30247511d4836c98eecad2d34baa285b
 URL:		http://www.isi.edu/nsnam/
 Patch0:		%{name}-install.patch
-Patch1:		%{name}-gcc33.patch
 BuildRequires:	autoconf
 BuildRequires:	otcl-devel
 BuildRequires:	tclcl-static
-BuildRequires:	tcl-devel = 8.4.4
-BuildRequires:	tk-devel = 8.4.4
+BuildRequires:	tcl-devel
+BuildRequires:	tk-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -98,13 +97,12 @@ Skrypty Tcl z nam.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__autoconf}
 %configure \
-	--with-tcl-ver=8.4.4 \
-	--with-tk-ver=8.4.4
+	--with-tcl-ver=8.4 \
+	--with-tk-ver=8.4
 %{__make} \
 	CCOPT="%{rpmcflags}"
 
