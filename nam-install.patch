@@ -1,0 +1,12 @@
+diff -urN nam-1.9.orig/Makefile.in nam-1.9/Makefile.in
+--- nam-1.9.orig/Makefile.in	2003-02-26 21:52:56.000000000 +0100
++++ nam-1.9/Makefile.in	2003-10-31 18:18:02.000000000 +0100
+@@ -161,7 +161,7 @@
+ 	$(TCLSH) bin/string2c.tcl version < VERSION > $@
+ 
+ install: force
+-	$(INSTALL) -m 555 -o bin -g bin nam $(DESTDIR)$(BINDEST)
++	$(INSTALL) -m 555 nam $(DESTDIR)$(BINDEST)
+ 
+ clean:
+ 	$(RM) $(CLEANFILES)
