@@ -16,7 +16,7 @@ Patch2:		%{name}-link.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	otcl-devel
-BuildRequires:	tclcl-static
+BuildRequires:	tclcl-devel
 BuildRequires:	tcl-devel >= 8.4
 BuildRequires:	tk-devel >= 8.4
 BuildRequires:	zlib-devel
