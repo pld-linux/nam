@@ -13,6 +13,7 @@ URL:		http://www.isi.edu/nsnam/
 Patch0:		%{name}-install.patch
 Patch1:		tcl-lib.patch
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	otcl-devel
 BuildRequires:	tclcl-static
 BuildRequires:	tcl-devel >= 8.4
@@ -35,7 +36,7 @@ danych.
 Summary:	Various scripts from nam
 Summary(pl):	Ró¿ne skrypty do nam
 Group:		Applications/Networking
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description bin
 Various scripts from nam.
@@ -47,7 +48,7 @@ Ró¿ne skrypty do nam.
 Summary:	ns-scripts for Directed Research
 Summary(pl):	Skrypty ns z rzeczywistych badañ
 Group:		Applications/Networking
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description edu
 This package contains tcl files which are ns-scripts for Directed
@@ -64,7 +65,7 @@ http://www-scf.usc.edu/~hyunahpa/D-Research/DR-home.html
 Summary:	Examples
 Summary(pl):	Przyk³ady
 Group:		Applications/Networking
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description ex
 Examples which have been collected from ns runs.
@@ -76,7 +77,7 @@ Przyk³ady zebrane podczas pracy ns.
 Summary:	Demos
 Summary(pl):	Dema
 Group:		Applications/Networking
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description iecdemos
 Demos.
@@ -88,7 +89,7 @@ Dema.
 Summary:	Tcl scripts
 Summary(pl):	Skrypty Tcl
 Group:		Applications/Networking
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description tcl
 Some Tcl scripts from nam.
