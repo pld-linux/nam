@@ -16,6 +16,7 @@ Patch2:		%{name}-link.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	otcl-devel
+BuildRequires:	perl-base
 BuildRequires:	tclcl-devel
 BuildRequires:	tcl-devel >= 8.4
 BuildRequires:	tk-devel >= 8.4
@@ -114,7 +115,7 @@ cp -f /usr/share/automake/config.sub .
 %{__make} \
 	CCOPT="%{rpmcflags}"
 
-perl -pe 's|/usr/local/bin/tclsh7.6|/usr/bin/tclsh|' -i fix-script.tcl
+%{__perl} -pe 's|/usr/local/bin/tclsh7.6|/usr/bin/tclsh|' -i fix-script.tcl
 
 %install
 rm -rf $RPM_BUILD_ROOT
