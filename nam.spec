@@ -1,5 +1,5 @@
 Summary:	Network Animator
-Summary(pl):	Network Animator - sieciowe narzêdzie animuj±ce
+Summary(pl.UTF-8):   Network Animator - sieciowe narzÄ™dzie animujÄ…ce
 Name:		nam
 Version:	1.10
 Release:	3
@@ -28,27 +28,27 @@ Nam is a Tcl/TK based animation tool for viewing network simulation
 traces and real world packet traces. It supports topology layout,
 packet level animation, and various data inspection tools.
 
-%description -l pl
-Nam jest opartym na Tcl/TK narzêdziem animuj±cym do ogl±dania
-tras symulowanych oraz rzeczywistych pakietów. Wspiera przedstawianie
-topologii, animowanie na poziomie pakietów i ró¿ne narzêdzia obróbki
+%description -l pl.UTF-8
+Nam jest opartym na Tcl/TK narzÄ™dziem animujÄ…cym do oglÄ…dania
+tras symulowanych oraz rzeczywistych pakietÃ³w. Wspiera przedstawianie
+topologii, animowanie na poziomie pakietÃ³w i rÃ³Å¼ne narzÄ™dzia obrÃ³bki
 danych.
 
 %package bin
 Summary:	Various scripts from nam
-Summary(pl):	Ró¿ne skrypty do nam
+Summary(pl.UTF-8):   RÃ³Å¼ne skrypty do nam
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
 %description bin
 Various scripts from nam.
 
-%description bin -l pl
-Ró¿ne skrypty do nam.
+%description bin -l pl.UTF-8
+RÃ³Å¼ne skrypty do nam.
 
 %package edu
 Summary:	ns-scripts for Directed Research
-Summary(pl):	Skrypty ns z rzeczywistych badañ
+Summary(pl.UTF-8):   Skrypty ns z rzeczywistych badaÅ„
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
@@ -58,45 +58,45 @@ Research with Dr. Heidemann. You could see the explanation about
 those files at
 http://www-scf.usc.edu/~hyunahpa/D-Research/DR-home.html
 
-%description edu -l pl
-Pakiet ten zawiera pliki tcl bêd±ce skryptami ns z badañ Dr.
-Heidemann. Wyja¶nienia do tych plików mo¿esz znale¼æ pod
+%description edu -l pl.UTF-8
+Pakiet ten zawiera pliki tcl bÄ™dÄ…ce skryptami ns z badaÅ„ Dr.
+Heidemann. WyjaÅ›nienia do tych plikÃ³w moÅ¼esz znaleÅºÄ‡ pod
 http://www-scf.usc.edu/~hyunahpa/D-Research/DR-home.html
 
 %package ex
 Summary:	Examples
-Summary(pl):	Przyk³ady
+Summary(pl.UTF-8):   PrzykÅ‚ady
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
 %description ex
 Examples which have been collected from ns runs.
 
-%description ex -l pl
-Przyk³ady zebrane podczas pracy ns.
+%description ex -l pl.UTF-8
+PrzykÅ‚ady zebrane podczas pracy ns.
 
 %package iecdemos
 Summary:	Demos
-Summary(pl):	Dema
+Summary(pl.UTF-8):   Dema
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
 %description iecdemos
 Demos.
 
-%description iecdemos -l pl
+%description iecdemos -l pl.UTF-8
 Dema.
 
 %package tcl
 Summary:	Tcl scripts
-Summary(pl):	Skrypty Tcl
+Summary(pl.UTF-8):   Skrypty Tcl
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
 %description tcl
 Some Tcl scripts from nam.
 
-%description tcl -l pl
+%description tcl -l pl.UTF-8
 Skrypty Tcl z nam.
 
 %prep
