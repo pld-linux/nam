@@ -1,5 +1,5 @@
 Summary:	Network Animator
-Summary(pl.UTF-8):   Network Animator - sieciowe narzędzie animujące
+Summary(pl.UTF-8):	Network Animator - sieciowe narzędzie animujące
 Name:		nam
 Version:	1.10
 Release:	3
@@ -36,7 +36,7 @@ danych.
 
 %package bin
 Summary:	Various scripts from nam
-Summary(pl.UTF-8):   Różne skrypty do nam
+Summary(pl.UTF-8):	Różne skrypty do nam
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
@@ -48,7 +48,7 @@ Różne skrypty do nam.
 
 %package edu
 Summary:	ns-scripts for Directed Research
-Summary(pl.UTF-8):   Skrypty ns z rzeczywistych badań
+Summary(pl.UTF-8):	Skrypty ns z rzeczywistych badań
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
@@ -65,7 +65,7 @@ http://www-scf.usc.edu/~hyunahpa/D-Research/DR-home.html
 
 %package ex
 Summary:	Examples
-Summary(pl.UTF-8):   Przykłady
+Summary(pl.UTF-8):	Przykłady
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
@@ -77,7 +77,7 @@ Przykłady zebrane podczas pracy ns.
 
 %package iecdemos
 Summary:	Demos
-Summary(pl.UTF-8):   Dema
+Summary(pl.UTF-8):	Dema
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
@@ -89,7 +89,7 @@ Dema.
 
 %package tcl
 Summary:	Tcl scripts
-Summary(pl.UTF-8):   Skrypty Tcl
+Summary(pl.UTF-8):	Skrypty Tcl
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
